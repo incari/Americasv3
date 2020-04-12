@@ -13,7 +13,7 @@ cache:
   diectories:
   - ~/.npm
 script:
-  - yarn build
+  - npm build
 deploy:
   provider: pages
   edge: true
