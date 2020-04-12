@@ -19,35 +19,35 @@ const Styles = styled.div`
   }
 `;
 
-const Header = () => (
+export const Header = () => (
   <Styles>
     <Navbar expand='lg'>
-      <a to='/'>
+      <Link to='/'>
         <Navbar.Brand>
           <img src={logo} alt='Americas-Alliance-network-logo'></img>
         </Navbar.Brand>
-      </a>
+      </Link>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='ml-auto'>
           <Nav.Item>
             <Nav.Link>
-              <a to='/'>Home</a>
+              <Link to='/'>Home</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <a to='/about'>About</a>
+              <Link to='/about'>About</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <a to='/contact'>Contact</a>
+              <Link to='/contact'>Contact</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <a to='/Admin'>Admin</a>
+              <Link to='/Admin'>Admin</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
@@ -55,5 +55,3 @@ const Header = () => (
     </Navbar>
   </Styles>
 );
-
-export default Header;
