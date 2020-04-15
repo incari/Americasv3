@@ -5,7 +5,10 @@ import styled from 'styled-components';
 import logo from '../assets/Americas-logo.png';
 
 const Styles = styled.div`
+  position: relative;
+  color: red;
   .navbar {
+    height: 100px;
     background-color: #408abc;
   }
   a,
@@ -47,7 +50,7 @@ export const Header = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to='/Admin'>Admin</Link>
+              <Link to='/Upload'>Upload file</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
