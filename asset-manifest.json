@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Americasv3/static/css/main.e57fccfb.chunk.css",
-    "main.js": "/Americasv3/static/js/main.81351f7f.chunk.js",
-    "main.js.map": "/Americasv3/static/js/main.81351f7f.chunk.js.map",
+    "main.css": "/Americasv3/static/css/main.8bb50a02.chunk.css",
+    "main.js": "/Americasv3/static/js/main.31418807.chunk.js",
+    "main.js.map": "/Americasv3/static/js/main.31418807.chunk.js.map",
     "runtime-main.js": "/Americasv3/static/js/runtime-main.1fd078ad.js",
     "runtime-main.js.map": "/Americasv3/static/js/runtime-main.1fd078ad.js.map",
     "static/css/2.de424728.chunk.css": "/Americasv3/static/css/2.de424728.chunk.css",
-    "static/js/2.e17acf55.chunk.js": "/Americasv3/static/js/2.e17acf55.chunk.js",
-    "static/js/2.e17acf55.chunk.js.map": "/Americasv3/static/js/2.e17acf55.chunk.js.map",
+    "static/js/2.ff6d86b7.chunk.js": "/Americasv3/static/js/2.ff6d86b7.chunk.js",
+    "static/js/2.ff6d86b7.chunk.js.map": "/Americasv3/static/js/2.ff6d86b7.chunk.js.map",
     "index.html": "/Americasv3/index.html",
-    "precache-manifest.be7d12e66ae64f6d5a61e28762e169f0.js": "/Americasv3/precache-manifest.be7d12e66ae64f6d5a61e28762e169f0.js",
+    "precache-manifest.079dfcd3cee81dd53494f7408c002c8f.js": "/Americasv3/precache-manifest.079dfcd3cee81dd53494f7408c002c8f.js",
     "service-worker.js": "/Americasv3/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Americasv3/static/css/2.de424728.chunk.css.map",
-    "static/css/main.e57fccfb.chunk.css.map": "/Americasv3/static/css/main.e57fccfb.chunk.css.map",
-    "static/js/2.e17acf55.chunk.js.LICENSE.txt": "/Americasv3/static/js/2.e17acf55.chunk.js.LICENSE.txt",
+    "static/css/main.8bb50a02.chunk.css.map": "/Americasv3/static/css/main.8bb50a02.chunk.css.map",
+    "static/js/2.ff6d86b7.chunk.js.LICENSE.txt": "/Americasv3/static/js/2.ff6d86b7.chunk.js.LICENSE.txt",
     "static/media/Americas-logo.png": "/Americasv3/static/media/Americas-logo.37f73bb3.png",
     "static/media/logo.svg": "/Americasv3/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1fd078ad.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.e17acf55.chunk.js",
-    "static/css/main.e57fccfb.chunk.css",
-    "static/js/main.81351f7f.chunk.js"
+    "static/js/2.ff6d86b7.chunk.js",
+    "static/css/main.8bb50a02.chunk.css",
+    "static/js/main.31418807.chunk.js"
   ]
 }
