@@ -4,14 +4,15 @@ import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
-  min-height: calc(100vh - 300px);
+  min-height: calc(100vh - 250px);
   overflow: hidden;
   display: block;
   position: relative;
+  padding: 0px;
 `;
 
 export const Layout = props => (
   <Styles id='reasdasd'>
-    <Container>{props.children}</Container>
+    <Container fluid>{props.children}</Container>
   </Styles>
 );
