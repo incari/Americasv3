@@ -1,5 +1,9 @@
-import React from 'react';
-import { InputGroup, Container, Col, Form } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Form } from 'react-bootstrap';
+import { FaPlaneDeparture, FaTruck } from 'react-icons/fa';
+import { IoIosPaper } from 'react-icons/io';
+import { MdLocalAirport } from 'react-icons/md';
+
 import styled from 'styled-components';
 
 const americasColor = '#408abc';
@@ -26,13 +30,23 @@ const Styled = styled.div`
   }
 `;
 const Services = () => {
+  const [checkbox, setCheckbox] = useState('');
+
+  const handleChange = event => {
+    setCheckbox(alert(event.target.name));
+  };
+
   const services = [
-    { name: '🛩 Air freight', color: americasColor },
-    { name: '📡 Airport of discharge', color: americasColor },
-    { name: '🚚 Delivery', color: 'green' },
-    { name: '📝 Insurance', color: americasColor },
-    { name: '🚚 PickUp', color: 'red' },
-    { name: '📡 Airport of origin', color: 'red' }
+    { name: ` Air freight`, color: americasColor, icon: FaPlaneDeparture },
+    {
+      name: ' Airport of discharge',
+      color: americasColor,
+      icon: MdLocalAirport
+    },
+    { name: ' Delivery', color: 'green', icon: FaTruck },
+    { name: ' Insurance', color: americasColor, icon: IoIosPaper },
+    { name: ' PickUp', color: 'red', icon: FaTruck },
+    { name: ' Airport of origin', color: 'red', icon: MdLocalAirport }
   ];
   return (
     <>
@@ -47,9 +61,15 @@ const Services = () => {
                 key={`custom-${service.name}`}
                 className='mb-3 services-checkbox'
               >
-                <Form.Check type='checkbox' id={`label`}>
-                  <Form.Check.Input type='checkbox' />
+                <Form.Check type='checkbox'>
+                  <Form.Check.Input
+                    name={service.name}
+                    type='checkbox'
+                    value={checkbox}
+                    onChange={handleChange}
+                  />
                   <Form.Check.Label style={{ color: service.color }}>
+                    <span>{React.createElement(service.icon)}</span>
                     {`${service.name}`}
                   </Form.Check.Label>
                 </Form.Check>

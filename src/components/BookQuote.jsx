@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Container, Form, Row, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Col, Form, Row, Button } from 'react-bootstrap';
 
 const americasColor = '#408abc';
 const Styled = styled.div`
-  .container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 1px #408abc;
+  border-radius: 25px;
+
+  button {
+    background-color: #408abc;
     padding: 0px;
+    width: 80%;
+    border-radius: 25px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  a {
+    color: #408abc;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+  }
+  h3 {
+    margin: 0;
+  }
+  .row {
+    justify-content: center;
   }
   .services-title {
     background-color: #408abc;
@@ -14,32 +40,50 @@ const Styled = styled.div`
     margin-bottom: 10px;
     text-align: center;
   }
-  button {
-    background-color: #408abc;
+  .book-email {
+    justify-content: right;
+    margin: 15px;
   }
 `;
 const BookQuote = () => {
+  const [email, setEmail] = useState('');
+  const [price, setPrice] = useState('356');
+
+  const handleSubmit = event => {
+    alert(`${email} => ${price}`);
+    event.preventDefault();
+  };
+
   return (
-    <Styled>
-      <Container className='text-justify'>
-        <Form>
-          <Row>
-            <Form.Group controlId='formBasicEmail'>
+    <>
+      <Styled>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group as={Col}>
+            <Row className='book-email'>
               <Form.Label>Email address</Form.Label>
-              <Form.Control type='email' placeholder='Enter email' />
+              <Form.Control
+                type='email'
+                placeholder='Enter email'
+                value={email.value}
+                onChange={e => setEmail(e.target.value)}
+              />
               <Form.Text className='text-muted'>
-                We'll never share your email with anyone else.
+                This quote is only valid for the next 48 hours
               </Form.Text>
-            </Form.Group>
-          </Row>
-          <Row className='justify-content-lg-center'>
-            <Button variant='primary' size='lg' block>
-              Get Quotes
-            </Button>
-          </Row>
+            </Row>
+            <Row>
+              <Button type='submit' size='lg'>
+                <h3>$ {price}</h3>
+                <p>Book Now</p>
+              </Button>
+            </Row>
+            <Row>
+              <Link to='/contact'> More info ➡ ️</Link>
+            </Row>
+          </Form.Group>
         </Form>
-      </Container>
-    </Styled>
+      </Styled>
+    </>
   );
 };
 
