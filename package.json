@@ -16,8 +16,10 @@
     "react-csv-reader": "^3.0.5",
     "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
+    "react-lineto": "^3.1.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-svg-pathline": "^0.5.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {
