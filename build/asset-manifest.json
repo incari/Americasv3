@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Americasv3/static/css/main.8bb50a02.chunk.css",
-    "main.js": "/Americasv3/static/js/main.4000b9cd.chunk.js",
-    "main.js.map": "/Americasv3/static/js/main.4000b9cd.chunk.js.map",
-    "runtime-main.js": "/Americasv3/static/js/runtime-main.1fd078ad.js",
-    "runtime-main.js.map": "/Americasv3/static/js/runtime-main.1fd078ad.js.map",
-    "static/css/2.de424728.chunk.css": "/Americasv3/static/css/2.de424728.chunk.css",
-    "static/js/2.b4320aeb.chunk.js": "/Americasv3/static/js/2.b4320aeb.chunk.js",
-    "static/js/2.b4320aeb.chunk.js.map": "/Americasv3/static/js/2.b4320aeb.chunk.js.map",
-    "index.html": "/Americasv3/index.html",
-    "precache-manifest.7671949c7e6f93a1a262d73f535a987f.js": "/Americasv3/precache-manifest.7671949c7e6f93a1a262d73f535a987f.js",
-    "service-worker.js": "/Americasv3/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/Americasv3/static/css/2.de424728.chunk.css.map",
-    "static/css/main.8bb50a02.chunk.css.map": "/Americasv3/static/css/main.8bb50a02.chunk.css.map",
-    "static/js/2.b4320aeb.chunk.js.LICENSE.txt": "/Americasv3/static/js/2.b4320aeb.chunk.js.LICENSE.txt",
-    "static/media/Americas-logo.png": "/Americasv3/static/media/Americas-logo.37f73bb3.png",
-    "static/media/logo.svg": "/Americasv3/static/media/logo.5d5d9eef.svg",
-    "static/media/skycargo.png": "/Americasv3/static/media/skycargo.e0d1746f.png"
+    "main.css": "/static/css/main.8bb50a02.chunk.css",
+    "main.js": "/static/js/main.8409dab3.chunk.js",
+    "main.js.map": "/static/js/main.8409dab3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d6b97fa4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d6b97fa4.js.map",
+    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
+    "static/js/2.f52ffad0.chunk.js": "/static/js/2.f52ffad0.chunk.js",
+    "static/js/2.f52ffad0.chunk.js.map": "/static/js/2.f52ffad0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0fba3322d8f9a711f0adcf29789583f0.js": "/precache-manifest.0fba3322d8f9a711f0adcf29789583f0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
+    "static/css/main.8bb50a02.chunk.css.map": "/static/css/main.8bb50a02.chunk.css.map",
+    "static/js/2.f52ffad0.chunk.js.LICENSE.txt": "/static/js/2.f52ffad0.chunk.js.LICENSE.txt",
+    "static/media/Americas-logo.png": "/static/media/Americas-logo.37f73bb3.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/skycargo.png": "/static/media/skycargo.e0d1746f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1fd078ad.js",
+    "static/js/runtime-main.d6b97fa4.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.b4320aeb.chunk.js",
+    "static/js/2.f52ffad0.chunk.js",
     "static/css/main.8bb50a02.chunk.css",
-    "static/js/main.4000b9cd.chunk.js"
+    "static/js/main.8409dab3.chunk.js"
   ]
 }

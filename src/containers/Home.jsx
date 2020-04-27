@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import Cities from '../components/Cities';
 import Quotation from '../components/Quotation';
@@ -18,4 +18,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = state => {
+  return;
+};
+
+export default connect(mapStateToProps, null)(Home);

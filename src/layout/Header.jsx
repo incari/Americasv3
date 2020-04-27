@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../assets/Americas-logo.png';
@@ -8,7 +8,6 @@ const Styles = styled.div`
   position: relative;
   color: red;
   .navbar {
-    height: 100px;
     background-color: #408abc;
   }
   a,
@@ -24,37 +23,45 @@ const Styles = styled.div`
 
 export const Header = () => (
   <Styles>
-    <Navbar expand='lg'>
-      <Link to='/'>
-        <Navbar.Brand>
-          <img src={logo} alt='Americas-Alliance-network-logo'></img>
-        </Navbar.Brand>
-      </Link>
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />
-      <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='ml-auto'>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to='/'>Home</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to='/about'>About</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to='/contact'>Contact</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to='/Upload'>Upload file</Link>
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <Row>
+      <Col>
+        <Navbar expand='md'>
+          <Link to='/'>
+            <Navbar.Brand>
+              <img
+                className='w-75'
+                src={logo}
+                alt='Americas-Alliance-network-logo'
+              ></img>
+            </Navbar.Brand>
+          </Link>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ml-auto'>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to='/'>Home</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to='/about'>About</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to='/contact'>Contact</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to='/Upload'>Upload file</Link>
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Col>
+    </Row>
   </Styles>
 );

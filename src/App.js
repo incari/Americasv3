@@ -19,8 +19,8 @@ class App extends React.Component {
           <Header />
           <Layout>
             <Switch>
-              <Route exact path='/about' component={First}></Route>
               <Route exact path='/' component={Home}></Route>
+              <Route exact path='/about' component={First}></Route>
               <Route exact path='/Upload' component={UploadFile}></Route>
               {/* <Route exact path='/Admin' component={Admin}></Route>
             <Route exact path='/contact' component={Contact}></Route>
